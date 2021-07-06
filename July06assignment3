@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+class assignment1
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,size,sum1=0;
+        System.out.println("Enter even array size:");
+        size=sc.nextInt();
+        int a[];a=new int[size];
+        System.out.println("Enter array elements:");
+        for(i=0;i<size;i++)
+        {
+         a[i]=sc.nextInt();
+        }
+        for(i=0;i<size;i++)
+        {
+       sum1=sum1+a[i];
+       if(a[i]==a[(size-1)/2])
+       break;
+        }
+        System.out.println("sum1 is:"+sum1);
+        }
+        }
+        
+     
