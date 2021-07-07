@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+class assignment1
+{
+ public static void main(String args[])
+    {
+  Scanner sc=new Scanner(System.in);
+   int i,size,count1=0,count2=0;
+   System.out.println("Enter array size:");
+   size=sc.nextInt();
+   int a[];a=new int[size];
+   System.out.println("Enter array elements:");
+   for(i=0;i<size;i++)
+   {
+    a[i]=sc.nextInt();
+   }
+   for(i=0;i<size;i++)
+   {
+       if(a[i]%2==0)
+       count1++;
+       }
+       if(count1%2==0)
+       System.out.println(count1+"even numbers");
+       else
+System.out.println(count1+"odd numbers");
+for(i=0;i<size;i++)
+   {
+       if(a[i]%2==1)
+       count2++;
+       }
+       if(count2%2==0)
+       System.out.println(count2+" even numbers");
+       else
+System.out.println(count2+" odd numbers");
+int p;
+p=count1*count2;
+if(p%2==0)
+System.out.println(p+" is even");
+else
+System.out.println(p+" is odd");
+    }   
+   }
+   
